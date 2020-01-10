@@ -1,0 +1,154 @@
+package aniket12;
+
+public class Outer {
+	public static void main(String[] args) {
+		
+			Sk s=new Sk();
+			
+			s.display();
+	
+	}
+
+}
+class Sk
+{
+	
+			
+			int x=10;
+			static int y=5;
+				public void display() {
+					class member
+					{
+						public void show()
+						{
+							System.out.println(x);
+							System.out.println(y);
+						}
+					}
+					class such{
+						public void print()
+						{
+							System.out.println(x);
+							System.out.println(y);
+						}
+					}
+				
+				member m=new member();
+				m.show();
+				such s1=new such();
+				s1.print();
+				}
+				
+
+	}
+
+
+********************************************************************************************************
+package aniket12;
+
+public class Arich {
+	public static void main(String[] args) {
+		Test t=new Test()
+				{
+		public void display()
+		{
+			System.out.println("ddddddd");
+		}
+				};
+		
+		t.display();
+	}
+	}
+
+
+interface Test
+{
+	 void display();
+	
+}
+************************************************************************************************
+package aniket12;
+import java.util.Scanner;
+
+public class Demoo {
+	static void print() throws Exception
+	{
+		System.out.println("inside fun()");
+		throw new Exception("demo");
+		
+	}
+public static void main(String[] args) {
+	try
+	{
+print();
+	
+	}
+	catch(Exception e) {
+		System.out.println("sssswssss");
+	}
+}
+}
+
+******************************************************************************************************
+package aniket12;
+
+public class Excep {
+public static boolean isvalidUser(String user) throws InvalidUser
+{
+	if(!user.equals("admin"))
+			{
+				throw new InvalidUser("you are Invalid");
+				
+			}
+			return true;
+}
+			public static void main(String [] args)
+			{
+				try
+				{
+					isvalidUser("admingggg");
+				
+				}catch(InvalidUser e)
+				{
+					System.out.println(e.getmessage());
+				}
+			}
+			
+			
+}
+			
+			class InvalidUser extends Exception
+			{
+				public InvalidUser()
+				{
+					
+				}
+				InvalidUser(String message)
+				{
+					System.out.println("yessss");
+				}
+		public String getmessage()
+		{
+			return "this is invalid user ";
+		}
+			}
+
+*****************************************************************************************************
+package aniket12;
+
+import java.util.PriorityQueue;
+
+public class Kkkk {
+public static void main(String[] args) {
+	{
+		PriorityQueue<Integer> p=new PriorityQueue<Integer>();
+		p.add(10);
+		p.add(20);
+		p.add(45);
+		p.add(90);
+		System.out.println(p.peek());
+		// System.out.println(p.poll()); 
+		
+	}
+}
+}
